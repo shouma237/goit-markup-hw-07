@@ -170,8 +170,12 @@ body {
 .hero {
   background-color: var(--navyblue);
   padding: 188px 0;
-  background-image: url(../images/people-office-1.png),
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -316,6 +320,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .ourteam-icon-item {
@@ -340,7 +345,7 @@ body {
 
 .ourteam-icon-link:hover,
 .ourteam-icon-link:focus {
-  background-color: var(--green);
+  background-color: var(--ocean);
 }
 
 /* CLIENT LIST */
@@ -402,6 +407,7 @@ body {
 
 .footer-socials-text {
   color: white;
+  font-weight: 500;
 }
 
 .footer-socials {
@@ -481,6 +487,7 @@ body {
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 8px;
   /* 120% */
   letter-spacing: 0.4px;
 }
@@ -513,4 +520,17 @@ body {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
