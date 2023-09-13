@@ -20,7 +20,7 @@
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a href="./index.html" class="navheader-link current-page"
+              <a href="./index.html" class="navheader-link current current-page"
                 >Studio</a
               >
             </li>
@@ -60,7 +60,9 @@
             FOR YOUR BUSINESS
           </h1>
 
-          <button type="button" class="orderservice">Order Service</button>
+          <button type="button" class="orderservice" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -475,5 +477,18 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL JS SCRIPT -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
