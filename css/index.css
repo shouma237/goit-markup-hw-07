@@ -627,8 +627,8 @@ body {
   width: 30px;
   height: 30px;
 
-  background-color: var(--white);
-  color: black;
+  background-color: var(--cornflower);
+  color: var(--navyblue);
   border-radius: 15px;
   cursor: pointer;
 
