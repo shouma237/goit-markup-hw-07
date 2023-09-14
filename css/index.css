@@ -629,7 +629,6 @@ body {
 
   background-color: var(--white);
   color: black;
-  border: 1px solod rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
 
