@@ -605,6 +605,7 @@ body {
   min-width: 408px;
   min-height: 584px;
   background-color: var(--white);
+  padding: 40px;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -650,4 +651,14 @@ body {
   visibility: none;
   opacity: 0;
   pointer-events: none;
+}
+
+/* Modal form */
+
+.modal-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
