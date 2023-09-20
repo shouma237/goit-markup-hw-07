@@ -48,6 +48,7 @@ html {
   --ocean: #404bbf;
   --white: #ffffff;
   --green: #31d0aa;
+  --navybluemodal: #2e2f4266 40%;
 }
 
 body {
@@ -661,4 +662,64 @@ body {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+
+/* Modal form */
+
+.modal-title {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  position: relative;
+}
+
+.form-name {
+  position: absolute;
+  top: -18px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8f99;
+  line-height: 14px;
+  letter-spacing: 4%;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0 0 29px 0;
+  padding: 11px 16px 11px 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  line-height: 0.87px;
+  letter-spacing: 0.01em;
+  color: black;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
+  resize: none;
+  margin: 0 0 29px 0;
+  width: 100%;
+  padding: 11px 16px 11px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 120px;
+  letter-spacing: 0.01em;
+  color: black;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus,
+.form-input:hover,
+.form-textarea:hover,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--iriscolor);
+}
+
+.button-agreement {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
 }
