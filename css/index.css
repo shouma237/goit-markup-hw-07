@@ -499,6 +499,7 @@ body {
   background-color: var(--navyblue);
   margin-right: 30px;
   padding-left: 15px;
+  margin-top: 10px;
 }
 
 .footer-email-form::placeholder {
@@ -523,6 +524,7 @@ body {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
 }
 
 .footer-button-icon {
