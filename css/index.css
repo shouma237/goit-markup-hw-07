@@ -677,8 +677,6 @@ body {
 /* Footer */
 
 .footer-container {
-  /* display: flex;
-  align-items: flex-start; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -687,6 +685,7 @@ body {
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -695,15 +694,23 @@ body {
 
   @media screen and (min-width: 1158px) {
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     flex-wrap: nowrap;
-    column-gap: 96px;
-    row-gap: 0;
+    gap: 40px;
+    width: 1158px;
   }
 }
 
 .footer-logo-wrapper {
-  margin-bottom: 72px;
+  @media screen and (min-width: 768px) {
+    text-wrap: nowrap;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1158px) {
+    text-wrap: nowrap;
+    text-align: left;
+  }
 }
 
 .footer {
@@ -726,6 +733,7 @@ body {
   font-weight: 500;
 
   @media screen and (min-width: 768px) {
+    text-align: left;
   }
 }
 
@@ -774,20 +782,16 @@ body {
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-  }
-}
-
-.footer-form-form {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    position: relative;
+    justify-content: left;
+    align-items: left;
+    left: 100px;
   }
 
   @media screen and (min-width: 1158px) {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
+    flex-wrap: nowrap;
+    left: 0;
   }
 }
 
@@ -821,8 +825,7 @@ body {
   margin-top: 10px;
   font-size: 12px;
 }
-
-.footer-email-form::placeholder {
+f .footer-email-form::placeholder {
   color: var(--white);
 }
 
@@ -845,6 +848,18 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    left: 250px;
+    top: -142px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: inline-flex;
+    top: 2px;
+    left: 0;
+  }
 }
 
 .footer-button-icon {
