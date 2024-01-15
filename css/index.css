@@ -1291,7 +1291,6 @@ f .footer-email-form::placeholder {
 /* HAMBURGER MENU NAVIGATION AND CLOSE ICON */
 .menu-container {
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
